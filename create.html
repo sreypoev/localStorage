@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>LocalStorage</title>
+        <meta name="" content="">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <h2 id="title">Music</h2>
+            </header>
+            <nav id="menu" class="clearfix">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav> 
+            <!-- Main Content area -->
+            <section id="content">
+                <h2>Play list:</h2>
+                <select id="data">
+                    <option value="">...Pls select...</option>
+                </select> 
+                <input type="button" value="Choose" id="choose" />
+                <hr/>
+                <h2>Create albums</h2>
+                <div>
+                    01. KromMekLerDey.mp3 <input type="checkbox" value="KromMekLerDey.mp3" class="music"/><br/>
+                    02. SnePakThormYia.mp3 <input type="checkbox" value ="SnePakThormYia.mp3" class="music"/><br/>
+                    03. SroLanhOunOyChreunChreun.mp3 <input type="checkbox" value="SroLanhOunOyChreunChreun.mp3" class="music"/><br/>
+                    04. LeaTangAlai.mp3 <input type="checkbox" value="LeaTangAlai.mp3" class="music" id="s4" /><br/>
+                    05. ThaBesdongBongPhong.mp3 <input type="checkbox" value="ThaeBesdongBongPhong.mp3" class="music"/><br/>
+                    06. BongSroNosSomDai.mp3 <input type="checkbox" value="BongSroNosSomDai.mp3" class="music"/><br/>
+                    07. SneTeaSreyMouy.mp3 <input type="checkbox" value="SneTeaSreyMouy.mp3" class="music"/><br/>
+                    08. OrDungChanTrea.mp3 <input type="checkbox" value="OrDungChanTrea.mp3" class="music"/><br/>
+                    09. MinArchKvasThlai.mp3 <input type="checkbox" value="MinArchKvasThlai.mp3" class="music"/><br/>
+                    10. TitanicThemeSong.mp3<input type="checkbox" value="TitanicThemeSong.mp3" class="music"/><br/>
+                </div>
+                <br/>
+                <span>Album name:</span><input type="text" id="nameAlbum"/>
+
+                <input type="button" id="save" value="Save"/>
+            </section>
+            <aside  id="sidebar">
+                <h3>PlayList</h3>
+                <span id="playList">
+                    
+                </span>
+            </aside>
+            <footer id="footer" class="clearfix">
+                Copyright BBU MIT
+            </footer>
+        </div>
+        <script src="jquery.min.js"></script>
+       <!-- <script src="modernizr.min.js"></script>
+       <script type="text/javascript">
+if (Modernizr.audio) {
+  // supported
+  alert('ok');
+} else {
+    alert('no');
+}
+        </script>-->
+        <script src="script.js"></script>
+    </body>
+</html>
